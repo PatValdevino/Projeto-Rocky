@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="formulario.css" media=""> 
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2007/2007518.png">
+  <title>Cadastro - Pa・Coffee</title>
+</head>
+
+<body>
+  <div class="campo">
+    <h1 id="titulo">Cadastro PaCoffee</h1>
+    <br>
+    <br>
+    <p id="subtitulo">Faça seu cadastro para receber informações personalizadas!</p>
+    <br>
+  </div>
+
+  <form>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="nome"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome"required>
+      </div>
+    </fieldset>
+
+    <div class="campo">
+      <label for="email"><strong>Email</strong></label>
+      <input type="email" id="email" required>
+    </div>
+    <br>
+
+    <div class="campo">
+      <label><strong> Das opções abaixo, qual a sua preferida?</strong></label>
+      <br>
+      <label>
+        <input type="radio" name="torra" value="tescura" checked>Torra escura
+      </label>
+      <label>
+        <input type="radio" name="torra" value="tmedia">Torra média
+      </label>
+      <label>
+        <input type="radio" name="torra" value="tmediac">Torra média clara
+      </label>
+    </div>
+
+        <br>
+
+    <div class="campo">
+      <label for="tipos"><strong>Qual o tipo de café de sua preferência?</strong></label>
+      <br>
+      <br>
+      <select id="tipos">
+        <option selected disabled value="">Selecione</option>
+        <option>Normal</option>
+        <option>Descafeinado</option>
+        <option>Orgânico</option>
+        <option>Microlote</option>
+      </select>
+    </div>
+    <br>
+
+    <fieldset class="grupo">
+     <div id="check"> 
+       <label><strong>Selecione seus tipos de preparo preferidos:</strong></label>
+       <br>
+       <br>
+       <br>
+        <input type="checkbox" id="preparo1" name="preparo1" value="Coado">
+        <label for="preparo1">Coado</label>
+        <input type="checkbox" id="preparo1" name="preparo1" value="Prensa francesa">
+        <label for="preparo1">Prensa francesa</label>
+        <input type="checkbox" id="preparo1" name="preparo1" value="Cafeteira italiana">
+        <label for="preparo1">Cafeteira italiana</label>
+        <input type="checkbox" id="preparo1" name="preparo1" value="Expresso">
+        <label for="preparo1">Expresso</label>
+        <input type="checkbox" id="preparo1" name="preparo1" value="Cápsula">
+        <label for="preparo1">Cápsula</label>
+     </div>
+    </fieldset>
+
+    <button class="botao" type="submit">Enviar</button>
+    <br>
+    
+    
+  </form>
+</body>
+
+
+</html>
