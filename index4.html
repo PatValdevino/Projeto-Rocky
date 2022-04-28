@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="formulario.css" media=""> 
+  <link rel="stylesheet" type="text/css" href="formulario.css" media="">
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2007/2007518.png">
   <title>Cadastro - Pa・Coffee</title>
 </head>
@@ -28,7 +28,7 @@
 
       <div class="campo">
         <label for="sobrenome"><strong>Sobrenome</strong></label>
-        <input type="text" name="sobrenome" id="sobrenome"required>
+        <input type="text" name="sobrenome" id="sobrenome" required>
       </div>
     </fieldset>
 
@@ -52,7 +52,7 @@
       </label>
     </div>
 
-        <br>
+    <br>
 
     <div class="campo">
       <label for="tipos"><strong>Qual o tipo de café de sua preferência?</strong></label>
@@ -69,11 +69,11 @@
     <br>
 
     <fieldset class="grupo">
-     <div id="check"> 
-       <label><strong>Selecione seus tipos de preparo preferidos:</strong></label>
-       <br>
-       <br>
-       <br>
+      <div id="check">
+        <label><strong>Selecione seus tipos de preparo preferidos:</strong></label>
+        <br>
+        <br>
+        <br>
         <input type="checkbox" id="preparo1" name="preparo1" value="Coado">
         <label for="preparo1">Coado</label>
         <input type="checkbox" id="preparo1" name="preparo1" value="Prensa francesa">
@@ -84,15 +84,22 @@
         <label for="preparo1">Expresso</label>
         <input type="checkbox" id="preparo1" name="preparo1" value="Cápsula">
         <label for="preparo1">Cápsula</label>
-     </div>
+      </div>
     </fieldset>
 
-    <button class="botao" type="submit">Enviar</button>
+
+    <button class="botao" type="submit" onclick="sucesso()">Enviar</button>
     <br>
-    
-    
+
+
   </form>
 </body>
 
 
 </html>
+
+<script>
+  function sucesso() {
+    alert("Cadastro realizado com sucesso!")
+  }
+</script>
